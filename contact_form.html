@@ -4,6 +4,8 @@
 <title>HTML Form</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?Inter">
 <body>
  <div class ="wrapper"> 
 <div class="left_column">
@@ -11,32 +13,45 @@
 <img src="odin_logo.png" alt="Odin Logo" height="100px">
 <h1>Odin</h1>
 </div>
-<div class="credit">placeholder</div>
+<div class="credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
 </div>
 
 <div class="right_column">
-    <div class="above_form"><p>This is not a real online service! You know you need something like this is your life to help your realize your deepest dreams.</p>
-        </p> You know you want to.</p></div>
+    <div class="above_form"><p>This is not a real online service! You know you <em>need</em> something like this is your life to help your realize your deepest dreams.</p>
+        </p> You <em>know</em> you want to.</p></div>
 <div class = "form_area">
     <form action="example.com/path" method="post">
     <div class = "form_body">
 <h2>Let's do this!</h2>
 <div class = "form_feilds">
 <span class="form_column">
+    <div>
     <label for="first_name">First Name</label>
   <input type="text" id="first_name">
+    </div>
+<div>
   <label for="email">Email</label>
   <input type="email" id="email">
-  <label for="password1">Password</label>
-  <input type="text" id="password1">
+</div>
+<div style="position: relative;">
+  <label for="password1" class="error">Password</label>
+  <input type="text" class="error" id="password1">
+  <span></span>
+</div>
 </span>
 <span class="form_column">
+    <div>
     <label for="last_name">Last Name</label>
     <input type="text" id="last_name">
+</div>
+<div>
     <label for="phone">Phone Number</label>
     <input type="tel" id="phone">
-    <label for="password2">Confirm Password</label>
-    <input type="text" id="password2">
+</div>
+<div style="position:relative;">
+    <label for="password2" class="error">Confirm Password</label>
+    <input type="text" class="error" id="password2">
+</div>
 </span>
 </div>
     </div>
@@ -46,7 +61,7 @@
     </div>
     </form>
     <div class = "below_form">
-        <p>Already have an account?</p>
+        <p>Already have an account? <a href="google.com" target="_blank">Log in</a></p>
     </div>
 </form>
 </div>
